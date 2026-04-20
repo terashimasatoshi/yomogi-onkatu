@@ -865,8 +865,10 @@ p { margin: 0; }
 }
 .step-img {
   width: 100%;
+  max-width: 320px;
   aspect-ratio: 4/3;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--paper);
   border-radius: var(--r-md);
   margin-top: 14px;
   display: block;
@@ -1742,7 +1744,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     card.className = 'voice-card';
     card.innerHTML =
       '<div class="voice-img">' +
-        '<img src="' + v.img + '" alt="' + v.imgAlt + '" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:var(--r-md)" loading="lazy" width="2048" height="1536">' +
+        '<img src="' + v.img + '" alt="' + v.imgAlt + '" style="width:100%;aspect-ratio:4/3;object-fit:contain;background:var(--paper);display:block;border-radius:var(--r-md)" loading="lazy" width="2048" height="1536">' +
         '<div class="voice-tag mincho-light">' + v.a + '</div>' +
       '</div>' +
       '<blockquote class="voice-quote serif">' +
