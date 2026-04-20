@@ -863,6 +863,14 @@ p { margin: 0; }
   line-height: 1.9;
   color: var(--ink-2);
 }
+.step-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: var(--r-md);
+  margin-top: 14px;
+  display: block;
+}
 
 /* ── Voices ── */
 .voices { background: var(--ivory); }
@@ -1334,7 +1342,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="fv-bg">
       <picture>
         <source srcset="assets/fv-hero.webp" type="image/webp">
-        <img src="assets/fv-hero.png" alt="福井市の女性専用よもぎ蒸しサロン ミーシェの施術イメージ" class="fv-bg-img" loading="eager" width="1024" height="1024">
+        <img src="assets/fv-hero.webp" alt="よもぎ蒸しミーシェの完全個室。畳に専用よもぎ蒸しイスが置かれた落ち着いた空間" class="fv-bg-img" loading="eager" width="2048" height="1536">
       </picture>
       <div class="fv-overlay"></div>
     </div>
@@ -1431,25 +1439,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- ── 06 解決策 (Solution) ── -->
   <section class="section solution">
     <div class="solution-img-wrap">
-      <div class="placeholder-wrap" style="aspect-ratio:3/4;border-radius:0">
-        <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
-          <defs>
-            <linearGradient id="st" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#ddd6bf"/>
-              <stop offset="100%" stop-color="#a8b098"/>
-            </linearGradient>
-          </defs>
-          <rect width="400" height="500" fill="url(#st)"/>
-          <path d="M-20 500 Q30 290 -10 100 Q40 50 0 -20" stroke="#fff" stroke-width="40" fill="none" opacity="0.15" stroke-linecap="round"/>
-          <path d="M40 500 Q90 300 50 100 Q100 50 60 -20" stroke="#fff" stroke-width="25" fill="none" opacity="0.2" stroke-linecap="round"/>
-          <path d="M100 500 Q150 290 110 100 Q160 50 120 -20" stroke="#fff" stroke-width="40" fill="none" opacity="0.15" stroke-linecap="round"/>
-          <path d="M160 500 Q210 300 170 100 Q220 50 180 -20" stroke="#fff" stroke-width="25" fill="none" opacity="0.2" stroke-linecap="round"/>
-          <path d="M220 500 Q270 290 230 100 Q280 50 240 -20" stroke="#fff" stroke-width="40" fill="none" opacity="0.15" stroke-linecap="round"/>
-          <path d="M280 500 Q330 300 290 100 Q340 50 300 -20" stroke="#fff" stroke-width="25" fill="none" opacity="0.2" stroke-linecap="round"/>
-          <path d="M340 500 Q390 290 350 100 Q400 50 360 -20" stroke="#fff" stroke-width="40" fill="none" opacity="0.15" stroke-linecap="round"/>
-          <path d="M400 500 Q450 300 410 100 Q460 50 420 -20" stroke="#fff" stroke-width="25" fill="none" opacity="0.2" stroke-linecap="round"/>
-        </svg>
-      </div>
+      <img src="assets/solution-main.webp" alt="専用マントを着てよもぎ蒸しイスに座り、じんわり温まる女性の施術イメージ" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" width="2048" height="1536">
       <div class="solution-img-overlay"></div>
     </div>
     <div class="container solution-body">
@@ -1513,6 +1503,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="step-body">
             <h3 class="step-t mincho-bold">ご来店・ご案内</h3>
             <p class="step-d">体調やご不安な点を確認し、初めての方にもわかりやすくご説明します。</p>
+            <img src="assets/step-consultation.webp" alt="スタッフがよもぎ蒸し中のお客様にタブレットで説明している様子" class="step-img" loading="lazy" width="2048" height="1536">
           </div>
         </div>
         <div class="step" data-step="1">
@@ -1520,6 +1511,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="step-body">
             <h3 class="step-t mincho-bold">お着替え・よもぎ蒸し</h3>
             <p class="step-d">専用マントを着て、個室でゆっくりお過ごしいただきます。</p>
+            <img src="assets/step-chair.webp" alt="よもぎ蒸し専用の木製イスと陶器の蒸し器のクローズアップ" class="step-img" loading="lazy" width="2048" height="1536">
           </div>
         </div>
         <div class="step" data-step="2">
@@ -1592,44 +1584,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- ── 11 最終CTA ── -->
   <section id="cta" class="section final-cta">
     <div class="final-cta-bg">
-      <div class="placeholder-wrap" style="aspect-ratio:9/16;border-radius:0;height:100%">
-        <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
-          <defs>
-            <linearGradient id="rm2" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#2f4537"/>
-              <stop offset="60%" stop-color="#3d5442"/>
-              <stop offset="100%" stop-color="#1e2e25"/>
-            </linearGradient>
-            <radialGradient id="glow2" cx="50%" cy="62%" r="45%">
-              <stop offset="0%" stop-color="#e8d9a5" stop-opacity="0.55"/>
-              <stop offset="100%" stop-color="#e8d9a5" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-          <rect width="400" height="500" fill="url(#rm2)"/>
-          <rect x="0" y="0" width="2" height="500" fill="#1a2620" opacity="0.35"/>
-          <rect x="34" y="0" width="2" height="500" fill="#1a2620" opacity="0.35"/>
-          <rect x="68" y="0" width="2" height="500" fill="#1a2620" opacity="0.35"/>
-          <rect x="102" y="0" width="2" height="500" fill="#1a2620" opacity="0.35"/>
-          <rect x="136" y="0" width="2" height="500" fill="#1a2620" opacity="0.35"/>
-          <rect x="170" y="0" width="2" height="500" fill="#1a2620" opacity="0.35"/>
-          <rect x="204" y="0" width="2" height="500" fill="#1a2620" opacity="0.35"/>
-          <rect x="238" y="0" width="2" height="500" fill="#1a2620" opacity="0.35"/>
-          <rect x="272" y="0" width="2" height="500" fill="#1a2620" opacity="0.35"/>
-          <rect x="306" y="0" width="2" height="500" fill="#1a2620" opacity="0.35"/>
-          <rect x="340" y="0" width="2" height="500" fill="#1a2620" opacity="0.35"/>
-          <rect x="374" y="0" width="2" height="500" fill="#1a2620" opacity="0.35"/>
-          <rect width="400" height="500" fill="url(#glow2)"/>
-          <ellipse cx="200" cy="420" rx="110" ry="18" fill="#0f1a15" opacity="0.4"/>
-          <path d="M140 280 L140 400 Q140 420 160 420 L240 420 Q260 420 260 400 L260 280 Q260 260 240 260 L160 260 Q140 260 140 280 Z" fill="#1a2620" opacity="0.75"/>
-          <rect x="170" y="245" width="60" height="40" rx="4" fill="#1a2620" opacity="0.85"/>
-          <g opacity="0.45">
-            <path d="M190 250 Q195 220 185 195 Q180 180 190 160" stroke="#ede5c8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-            <path d="M205 245 Q210 210 200 180 Q195 165 205 145" stroke="#ede5c8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-            <path d="M220 250 Q225 220 215 195" stroke="#ede5c8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-          </g>
-          <line x1="0" y1="430" x2="400" y2="430" stroke="#c9b88a" stroke-width="0.5" opacity="0.3"/>
-        </svg>
-      </div>
+      <img src="assets/salon-interior.webp" alt="アーチ型の個室が並ぶよもぎ蒸しミーシェのサロン内廊下" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" width="2048" height="1536">
       <div class="final-cta-overlay"></div>
     </div>
     <div class="container final-cta-body">
@@ -1772,18 +1727,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   /* ── Voices (slider) ── */
   var voices = [
-    { n:'40代 K.Sさま', a:'冷え・疲れ', q:'体が軽くなった気がする。汗がこんなに出ると思わなかった。', motive:'立ち仕事で足がむくんで辛かった', after:'仕事帰りに立ち寄れて続けやすい', kind:'leaf' },
-    { n:'30代 M.Tさま', a:'むくみ・睡眠', q:'むくみが前より気になりにくくなった。眠りが深くなった気がする。', motive:'夕方の足のむくみが気になって', after:'リラックスできて寝付きが良い', kind:'tea' },
-    { n:'50代 A.Yさま', a:'冷え', q:'冷えた体がじんわり温まって心地よかった。これなら無理なく続けられそう。', motive:'運動が続かず諦めていた', after:'座るだけなので通いやすい', kind:'window' },
-    { n:'40代 H.Kさま', a:'疲れ', q:'リラックスできて気分までスッキリした。自分の時間として続けたい。', motive:'家事と仕事で疲れが抜けなかった', after:'個室で完全に切り替えられる', kind:'abstract' },
+    { n:'40代 K.Sさま', a:'冷え・疲れ', q:'体が軽くなった気がする。汗がこんなに出ると思わなかった。', motive:'立ち仕事で足がむくんで辛かった', after:'仕事帰りに立ち寄れて続けやすい', img:'assets/voice-herb-pot.webp', imgAlt:'陶器の鍋によもぎが煮立っているよもぎ蒸し準備の様子' },
+    { n:'30代 M.Tさま', a:'むくみ・睡眠', q:'むくみが前より気になりにくくなった。眠りが深くなった気がする。', motive:'夕方の足のむくみが気になって', after:'リラックスできて寝付きが良い', img:'assets/voice-tea.webp', imgAlt:'よもぎ蒸し後にいただけるハーブティーのカップとポット' },
+    { n:'50代 A.Yさま', a:'冷え', q:'冷えた体がじんわり温まって心地よかった。これなら無理なく続けられそう。', motive:'運動が続かず諦めていた', after:'座るだけなので通いやすい', img:'assets/voice-herbs.webp', imgAlt:'よもぎ蒸しに使う乾燥よもぎ薬草がガラス皿に盛られている' },
+    { n:'40代 H.Kさま', a:'疲れ', q:'リラックスできて気分までスッキリした。自分の時間として続けたい。', motive:'家事と仕事で疲れが抜けなかった', after:'個室で完全に切り替えられる', img:'assets/voice-room.webp', imgAlt:'畳に2台のよもぎ蒸しイスが置かれた完全個室の空間' },
   ];
-
-  var placeholderSVGs = {
-    leaf: '<svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"><defs><linearGradient id="lf" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#e6e0cd"/><stop offset="100%" stop-color="#c8c3ac"/></linearGradient></defs><rect width="400" height="500" fill="url(#lf)"/><g transform="translate(200 260)" opacity="0.85"><path d="M0 0 Q20 -80 0 -140 Q-20 -80 0 0 Z" fill="#6b7d5a" transform="rotate(0) translate(0 -20)" opacity="0.7"/><path d="M0 0 Q20 -80 0 -140 Q-20 -80 0 0 Z" fill="#6b7d5a" transform="rotate(60) translate(0 -20)" opacity="0.7"/><path d="M0 0 Q20 -80 0 -140 Q-20 -80 0 0 Z" fill="#6b7d5a" transform="rotate(120) translate(0 -20)" opacity="0.7"/><path d="M0 0 Q20 -80 0 -140 Q-20 -80 0 0 Z" fill="#6b7d5a" transform="rotate(180) translate(0 -20)" opacity="0.7"/><path d="M0 0 Q20 -80 0 -140 Q-20 -80 0 0 Z" fill="#6b7d5a" transform="rotate(240) translate(0 -20)" opacity="0.7"/><path d="M0 0 Q20 -80 0 -140 Q-20 -80 0 0 Z" fill="#6b7d5a" transform="rotate(300) translate(0 -20)" opacity="0.7"/><circle r="14" fill="#2d4a3a"/></g></svg>',
-    tea: '<svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"><defs><linearGradient id="tb" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3d5442"/><stop offset="100%" stop-color="#1e2e25"/></linearGradient></defs><rect width="400" height="500" fill="url(#tb)"/><line x1="0" y1="350" x2="400" y2="350" stroke="#c9b88a" stroke-width="0.5" opacity="0.4"/><ellipse cx="200" cy="340" rx="80" ry="12" fill="#000" opacity="0.3"/><path d="M140 260 Q140 330 200 336 Q260 330 260 260 Z" fill="#efeadb"/><ellipse cx="200" cy="260" rx="60" ry="12" fill="#c9b88a" opacity="0.6"/><path d="M180 240 Q175 200 185 170 Q195 140 180 110" stroke="#efeadb" stroke-width="2" fill="none" opacity="0.7" stroke-linecap="round"/><path d="M210 240 Q215 200 205 170 Q195 140 215 110" stroke="#efeadb" stroke-width="2" fill="none" opacity="0.7" stroke-linecap="round"/></svg>',
-    window: '<svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"><defs><linearGradient id="wn" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f5efde"/><stop offset="100%" stop-color="#c9b88a"/></linearGradient></defs><rect width="400" height="500" fill="url(#wn)"/><rect x="60" y="60" width="280" height="380" fill="#fbf9f3" opacity="0.9"/><g stroke="#2d4a3a" stroke-width="1.5" opacity="0.4" fill="none"><line x1="60" y1="170" x2="340" y2="170"/><line x1="60" y1="280" x2="340" y2="280"/><line x1="60" y1="390" x2="340" y2="390"/><line x1="200" y1="60" x2="200" y2="440"/></g><path d="M80 440 Q120 380 150 360 Q180 345 220 340" stroke="#1e2e25" stroke-width="2" fill="none"/><circle cx="220" cy="340" r="8" fill="#2d4a3a" opacity="0.7"/><circle cx="210" cy="355" r="6" fill="#6b7d5a" opacity="0.7"/></svg>',
-    abstract: '<svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"><defs><linearGradient id="ab" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#efeadb"/><stop offset="100%" stop-color="#d4cba8"/></linearGradient></defs><rect width="400" height="500" fill="url(#ab)"/><circle cx="200" cy="250" r="150" fill="none" stroke="#2d4a3a" stroke-width="1" opacity="0.5"/><circle cx="200" cy="250" r="110" fill="none" stroke="#2d4a3a" stroke-width="0.6" opacity="0.4"/><circle cx="200" cy="250" r="70" fill="#2d4a3a" opacity="0.08"/><circle cx="200" cy="250" r="24" fill="#c9b88a" opacity="0.6"/><path d="M 280 250 A 80 80 0 1 1 200 170" stroke="#1e2e25" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/></svg>',
-  };
 
   var voicesTrack = document.getElementById('voices-track');
   var voicesDots = document.getElementById('voices-dots');
@@ -1794,7 +1742,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     card.className = 'voice-card';
     card.innerHTML =
       '<div class="voice-img">' +
-        '<div class="placeholder-wrap" style="aspect-ratio:4/3">' + placeholderSVGs[v.kind] + '</div>' +
+        '<img src="' + v.img + '" alt="' + v.imgAlt + '" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:var(--r-md)" loading="lazy" width="2048" height="1536">' +
         '<div class="voice-tag mincho-light">' + v.a + '</div>' +
       '</div>' +
       '<blockquote class="voice-quote serif">' +
