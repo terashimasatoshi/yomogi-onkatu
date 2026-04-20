@@ -21,18 +21,26 @@
 <meta name="twitter:description" content="冷え・むくみ・疲れに寄り添う、座るだけの温活習慣。初回体験¥3,900（税込）。">
 <meta name="twitter:image" content="https://terashimasatoshi.github.io/yomogi-onkatu/assets/fv-hero.webp">
 
+<!-- AEO: 追加メタタグ -->
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#2d4a3a">
+<meta name="geo.region" content="JP-18">
+<meta name="geo.placename" content="福井市">
+
 <!-- AEO: JSON-LD 構造化データ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "HealthAndBeautyBusiness",
+  "@id": "https://terashimasatoshi.github.io/yomogi-onkatu/#business",
   "name": "よもぎ蒸し ミーシェ",
-  "alternateName": "Miche",
-  "description": "福井市の女性専用よもぎ蒸し専門サロン。冷え・むくみ・疲れに寄り添う、座るだけの温活習慣を提案します。",
+  "alternateName": ["Miche", "ミーシェ"],
+  "description": "福井市の女性専用よもぎ蒸し専門サロン。冷え・むくみ・疲れに寄り添う、座るだけの温活習慣を提案します。完全個室・平日21時まで・駐車場完備。",
   "url": "https://terashimasatoshi.github.io/yomogi-onkatu/",
   "image": "https://terashimasatoshi.github.io/yomogi-onkatu/assets/fv-hero.webp",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "高木中央２丁目２６１２",
     "addressLocality": "福井市",
     "addressRegion": "福井県",
     "addressCountry": "JP"
@@ -57,6 +65,13 @@
     "@type": "City",
     "name": "福井市"
   },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "女性専用"
+  },
+  "sameAs": [
+    "https://beauty.hotpepper.jp/kr/slnH000769481/"
+  ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "よもぎ蒸しメニュー",
@@ -64,6 +79,7 @@
       {
         "@type": "Offer",
         "name": "初回温活体験（30分）",
+        "description": "初めてのお客様限定の体験メニュー。よもぎ蒸しで体をじんわり温める30分の温活体験。",
         "price": "3900",
         "priceCurrency": "JPY",
         "availability": "https://schema.org/InStock",
@@ -76,8 +92,79 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "よもぎ蒸し（ヨモギ蒸し）",
+  "description": "よもぎの蒸気を使った温熱療法。専用のイスに座り、下半身からじんわりと体を温めます。冷え・むくみ・疲労・汗をかきにくい方に親しまれてきた温活ケアです。激しい運動や食事制限は不要で、座るだけのかんたんな温活習慣として取り入れられます。",
+  "provider": {
+    "@id": "https://terashimasatoshi.github.io/yomogi-onkatu/#business"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "福井市"
+  },
+  "category": "温活・温熱療法",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "女性専用"
+  },
+  "offers": {
+    "@type": "Offer",
+    "name": "初回温活体験（30分）",
+    "price": "3900",
+    "priceCurrency": "JPY",
+    "url": "https://beauty.hotpepper.jp/kr/slnH000769481/coupon/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "よもぎ蒸し ミーシェ | 福井市の女性専用温活サロン",
+  "description": "福井市の女性専用よもぎ蒸し専門サロン ミーシェ。冷え・むくみ・疲れに寄り添う、座るだけの温活習慣。初回体験¥3,900（税込）。完全個室・平日21時まで・駐車場あり。",
+  "url": "https://terashimasatoshi.github.io/yomogi-onkatu/",
+  "inLanguage": "ja",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".fv-headline", ".fv-sub", ".fv-price-main", ".section-title", ".problem-body p", ".solution-lead"]
+  },
+  "about": {
+    "@id": "https://terashimasatoshi.github.io/yomogi-onkatu/#business"
+  },
+  "mainEntity": {
+    "@id": "https://terashimasatoshi.github.io/yomogi-onkatu/#business"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "よもぎ蒸しミーシェはどこにありますか？営業時間は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "福井県福井市高木中央２丁目２６１２にある女性専用のよもぎ蒸し専門サロンです。営業時間は平日（月・火・木・金）10:00〜21:00、土日10:00〜19:00です。水曜日が定休日となっております。駐車場完備です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "初回の料金はいくらですか？予約方法は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "初回限定の温活体験（30分）は¥3,900（税込）です。お一人様1回限りの体験価格です。ホットペッパービューティーからオンライン予約が可能です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "よもぎ蒸しとは何ですか？どんな効果がありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "よもぎ蒸しは、よもぎなどの薬草を煮立てた蒸気を専用のイスで体全体に当てる温熱療法です。体を内側から温めることで、冷え・むくみ・疲れの改善や、汗をかくことでのデトックス、リラックス効果などが期待されます。ミーシェでは、座るだけのかんたんな温活習慣として提案しています。"
+      }
+    },
     {
       "@type": "Question",
       "name": "本当に座っているだけでいいんですか？",
@@ -116,6 +203,38 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "女性の健康ケアとして親しまれてきた温活習慣としてご利用いただけます。ご不安がある場合は事前にご相談ください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "男性は利用できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ミーシェは女性専用サロンとなっております。男性のご利用はお受けしておりません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "完全個室ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、ミーシェは完全個室です。他のお客様の目を気にせず、プライベートな空間でリラックスしてお過ごしいただけます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "駐車場はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、駐車場をご用意しています。お車でのご来店も可能です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "仕事帰りに行けますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "平日は21時まで営業していますので、仕事帰りにもお立ち寄りいただけます。"
       }
     }
   ]
@@ -1554,7 +1673,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
       <div class="footer-mark serif">よもぎ蒸し<br><span class="foil" style="font-size:1.8em;letter-spacing:0.3em">ミーシェ</span></div>
       <div class="footer-info mincho-light">
-        <div>福井市〇〇町 1-2-3</div>
+        <div>福井県福井市高木中央２丁目２６１２</div>
         <div>営業時間 10:00 – 21:00（平日）／ 10:00 – 19:00（土日）</div>
         <div>定休日 水曜日</div>
       </div>
