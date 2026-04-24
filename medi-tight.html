@@ -562,7 +562,7 @@ body {
         <span class="fv-badge">服の上からOK</span>
       </div>
       <div class="fv-price-card reveal reveal-delay-3">
-        <div class="urgency-badge urgency-badge-dark"><span class="dot"></span>今月残り<span id="slots-fv">5</span>枠</div>
+        <div class="urgency-badge urgency-badge-dark"><span class="dot"></span>今月残り<span id="slots-fv">10</span>名</div>
         <div class="fv-price-label">初回限定 体験価格</div>
         <div class="fv-price-row">
           <span class="fv-price-from">初回</span>
@@ -655,7 +655,7 @@ body {
         メディタイトとは？
       </h2>
       <div class="tech-visual reveal reveal-delay-1">
-        <img src="assets/step-chair.webp" alt="よもぎ蒸し専用イスとメディタイト機器のセット" loading="lazy" width="2048" height="1536">
+        <img src="assets/IMG_8746.JPG" alt="メディタイト施術中の様子 電磁パルス機器を装着" loading="lazy" width="3024" height="4032">
         <span class="tech-badge">電磁パルス技術</span>
       </div>
       <p class="what-lead reveal reveal-delay-2">
@@ -892,7 +892,7 @@ body {
         インナーマッスルから体を変えます。
       </p>
       <div class="cta-offers reveal reveal-delay-3">
-        <div class="urgency-badge urgency-badge-dark" style="margin-bottom:4px"><span class="dot"></span>今月残り<span id="slots-cta">5</span>枠</div>
+        <div class="urgency-badge urgency-badge-dark" style="margin-bottom:4px"><span class="dot"></span>今月残り<span id="slots-cta">10</span>名</div>
         <div class="cta-offer">
           <div class="cta-offer-name">メディタイト単体<br>初回体験（30分）</div>
           <div class="cta-offer-price">
@@ -1185,11 +1185,9 @@ body {
 
   /* ── Urgency slots ── */
   (function() {
-    var d = new Date().getDate();
-    var s = d <= 7 ? 8 : d <= 14 ? 5 : d <= 21 ? 3 : d <= 27 ? 2 : 1;
     ['slots-fv','slots-cta'].forEach(function(id) {
       var el = document.getElementById(id);
-      if (el) el.textContent = s;
+      if (el) el.textContent = 10;
     });
   })();
 
