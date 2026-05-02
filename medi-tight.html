@@ -33,7 +33,7 @@
   "audience": { "@type": "Audience", "audienceType": "女性専用" },
   "offers": [
     { "@type": "Offer", "name": "メディタイト単体 初回体験（30分）", "price": "4400", "priceCurrency": "JPY", "url": "https://beauty.hotpepper.jp/kr/slnH000769481/coupon/" },
-    { "@type": "Offer", "name": "よもぎ蒸し×メディタイトセット 初回体験", "price": "8800", "priceCurrency": "JPY", "url": "https://beauty.hotpepper.jp/kr/slnH000769481/coupon/" }
+    { "@type": "Offer", "name": "よもぎ蒸し×メディタイトセット 初回体験", "price": "7150", "priceCurrency": "JPY", "url": "https://beauty.hotpepper.jp/kr/slnH000769481/coupon/" }
   ]
 }
 </script>
@@ -522,28 +522,6 @@ body {
 @media (prefers-reduced-motion:reduce) {
   * { transition-duration:.01ms!important; animation-duration:.01ms!important; }
 }
-
-/* ── Lightbox ── */
-.result-card { cursor: pointer; }
-.lightbox-overlay {
-  position: fixed; inset: 0; z-index: 300;
-  background: rgba(0,0,0,.85); backdrop-filter: blur(4px);
-  display: flex; align-items: center; justify-content: center;
-  opacity: 0; pointer-events: none; transition: opacity .3s;
-  padding: 20px;
-}
-.lightbox-overlay.active { opacity: 1; pointer-events: all; }
-.lightbox-overlay img {
-  max-width: 100%; max-height: 90vh; object-fit: contain;
-  border-radius: var(--r-md);
-}
-.lightbox-close {
-  position: absolute; top: 16px; right: 20px;
-  background: rgba(255,255,255,.15); border: none; color: #fff;
-  width: 40px; height: 40px; border-radius: 50%;
-  font-size: 22px; cursor: pointer; display: flex;
-  align-items: center; justify-content: center;
-}
 </style>
 </head>
 <body>
@@ -584,14 +562,14 @@ body {
         <span class="fv-badge">服の上からOK</span>
       </div>
       <div class="fv-price-card reveal reveal-delay-3">
-        <div class="urgency-badge urgency-badge-dark"><span class="dot"></span>今月残り<span id="slots-fv">5</span>枠</div>
+        <div class="urgency-badge urgency-badge-dark"><span class="dot"></span>今月残り<span id="slots-fv">10</span>名</div>
         <div class="fv-price-label">初回限定 体験価格</div>
         <div class="fv-price-row">
           <span class="fv-price-from">初回</span>
           <span class="fv-price-num">¥4,400</span>
           <span class="fv-price-unit">〜（税込）</span>
         </div>
-        <div class="fv-price-note">お一人様1回限り ／ セットは¥8,800〜</div>
+        <div class="fv-price-note">お一人様1回限り ／ セットは¥7,150〜</div>
       </div>
       <a href="https://beauty.hotpepper.jp/kr/slnH000769481/coupon/" class="btn btn-copper fv-cta reveal reveal-delay-4">
         初回体験を予約する <span>→</span>
@@ -677,7 +655,7 @@ body {
         メディタイトとは？
       </h2>
       <div class="tech-visual reveal reveal-delay-1">
-        <img src="assets/step-chair.webp" alt="よもぎ蒸し専用イスとメディタイト機器のセット" loading="lazy" width="2048" height="1536">
+        <img src="assets/IMG_8746.JPG" alt="メディタイト施術中の様子 電磁パルス機器を装着" loading="lazy" width="3024" height="4032">
         <span class="tech-badge">電磁パルス技術</span>
       </div>
       <p class="what-lead reveal reveal-delay-2">
@@ -914,19 +892,19 @@ body {
         インナーマッスルから体を変えます。
       </p>
       <div class="cta-offers reveal reveal-delay-3">
-        <div class="urgency-badge urgency-badge-dark" style="margin-bottom:4px"><span class="dot"></span>今月残り<span id="slots-cta">5</span>枠</div>
+        <div class="urgency-badge urgency-badge-dark" style="margin-bottom:4px"><span class="dot"></span>今月残り<span id="slots-cta">10</span>名</div>
         <div class="cta-offer">
           <div class="cta-offer-name">メディタイト単体<br>初回体験（30分）</div>
           <div class="cta-offer-price">
             <span class="cta-offer-first serif">¥4,400</span>
-            <span class="cta-offer-regular">通常 ¥16,500</span>
+            <span class="cta-offer-regular">通常 ¥8,800</span>
           </div>
         </div>
         <div class="cta-offer featured">
           <div class="cta-offer-name">よもぎ蒸し×メディタイト<br>セット 初回体験</div>
           <div class="cta-offer-price">
-            <span class="cta-offer-first serif">¥8,800</span>
-            <span class="cta-offer-regular">通常 ¥19,800</span>
+            <span class="cta-offer-first serif">¥7,150</span>
+            <span class="cta-offer-regular">通常 ¥14,300</span>
           </div>
         </div>
       </div>
@@ -966,12 +944,6 @@ body {
   </div>
 
 </div><!-- /.page -->
-
-<!-- Lightbox -->
-<div class="lightbox-overlay" id="lightbox-overlay">
-  <button class="lightbox-close" id="lightbox-close" aria-label="閉じる">&times;</button>
-  <img id="lightbox-img" src="" alt="">
-</div>
 
 <script>
 (function() {
@@ -1059,7 +1031,7 @@ body {
         '<span class="price-first serif">¥4,400</span>' +
         '<span class="price-first-unit">税込</span>' +
       '</div>' +
-      '<div class="price-regular">通常価格 ¥16,500</div>' +
+      '<div class="price-regular">通常価格 ¥8,800</div>' +
       '<ul class="price-includes">' +
         '<li>メディタイト（30分）</li>' +
         '<li>カウンセリング</li>' +
@@ -1079,10 +1051,10 @@ body {
     '<div class="price-card-body">' +
       '<div class="price-row">' +
         '<span class="price-label">初回体験</span>' +
-        '<span class="price-first serif">¥8,800</span>' +
+        '<span class="price-first serif">¥7,150</span>' +
         '<span class="price-first-unit">税込</span>' +
       '</div>' +
-      '<div class="price-regular">通常価格 ¥19,800</div>' +
+      '<div class="price-regular">通常価格 ¥14,300</div>' +
       '<ul class="price-includes">' +
         '<li>よもぎ蒸し（30分）</li>' +
         '<li>メディタイト（30分）</li>' +
@@ -1216,34 +1188,6 @@ body {
     ['slots-fv','slots-cta'].forEach(function(id) {
       var el = document.getElementById(id);
       if (el) el.textContent = 10;
-    });
-  })();
-
-  /* ── Lightbox for Before/After ── */
-  (function() {
-    var overlay = document.getElementById('lightbox-overlay');
-    var lbImg   = document.getElementById('lightbox-img');
-    var closeBtn = document.getElementById('lightbox-close');
-
-    document.querySelectorAll('.result-card').forEach(function(card) {
-      card.addEventListener('click', function() {
-        var img = card.querySelector('img');
-        if (img) {
-          lbImg.src = img.src;
-          lbImg.alt = img.alt;
-          overlay.classList.add('active');
-          document.body.style.overflow = 'hidden';
-        }
-      });
-    });
-
-    function closeLightbox() {
-      overlay.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-    closeBtn.addEventListener('click', closeLightbox);
-    overlay.addEventListener('click', function(e) {
-      if (e.target === overlay) closeLightbox();
     });
   })();
 
